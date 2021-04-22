@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import { Confirmation, UserIndentification, Welcome } from '../pages'
+import { Confirmation, UserIndentification, Welcome, PlantSelect } from '../pages'
 import { colors } from '../../styles'
 
 const { Navigator, Screen } = createStackNavigator()
@@ -20,6 +20,7 @@ export const AppStack = () => {
         <Screen name="Welcome" component={Welcome} />
         <Screen name="UserIndentification" component={UserIndentification} />
         <Screen name="Confirmation" component={Confirmation} />
+        <Screen name="PlantSelect" component={PlantSelect} />
       </Navigator>
     </NavigationContainer>
   )
